@@ -4,27 +4,15 @@ package DiscountStrategy;
  * @author Cainebourne
  */
 public class Customer {
-    private String name;
+    
     private String custId;
+    private String name;
 
-    public Customer(String name, String custId) {
+    public Customer( String custId, String name) {
         setName(name);
         setCustId(custId);
     }
     
-    
-
-    public final String getName() {
-        return name;
-    }
-
-    public final void setName(String name) {
-        if(name == null){
-            throw new IllegalArgumentException("Must enter valid name");
-        }
-        this.name = name;
-    }
-
     public final String getCustId() {
         return custId;
     }
@@ -36,5 +24,15 @@ public class Customer {
         this.custId = custId;
     }
     
+     public final String getName() {
+        return name;
+    }
+
+    public final void setName(String name) {
+        if(name == null){
+            throw new IllegalArgumentException("Must enter valid name");
+        }
+        this.name = name;
+    }
     
 }

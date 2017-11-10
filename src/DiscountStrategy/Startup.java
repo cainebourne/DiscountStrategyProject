@@ -11,7 +11,7 @@ public class Startup {
 //            Store Kohls = new Store();
             //sale 1
          
-            pos.startNewSale("", db, new ReceiptConsoleOutput());
+            pos.startNewSale("100", db, new ReceiptConsoleOutput());
             pos.addItemToSale("B205", 2);
             pos.addItemToSale("A101", 1);
             pos.endSaleAndOutputReceipt();

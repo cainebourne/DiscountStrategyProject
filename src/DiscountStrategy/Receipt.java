@@ -33,7 +33,7 @@ public class Receipt implements ReceiptFormatter {
         }
         Customer cust = db.findCustomer(custId);
         if(cust == null){
-            throw new IllegalArgumentException("Must enter valid valid id");
+            throw new IllegalArgumentException("Must enter valid id");
         }
         return cust;
     }
